@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - GreenScape Adventures</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>GreenScape Adventures</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="activities.html" class="nav-link"><i class="fas fa-hiking"></i> Activities</a>
+                <a href="gallery.html" class="nav-link active"><i class="fas fa-images"></i> Gallery</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About Us</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Discover the beauty of nature through our adventure photos</p>
+        </div>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="image-slider">
+        <div class="container">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                        <img src="images/gallery1.jpg" alt="Beautiful forest landscape">
+                        <div class="slide-caption">
+                            <h3>Misty Forest Morning</h3>
+                            <p>Early morning hiking in our pristine forest trails</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/gallery2.jpg" alt="Bird watching">
+                        <div class="slide-caption">
+                            <h3>Bird Watching Adventure</h3>
+                            <p>Spotting rare species with our expert guides</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/gallery3.jpg" alt="Eco camping">
+                        <div class="slide-caption">
+                            <h3>Sustainable Camping</h3>
+                            <p>Leave-no-trace camping in harmony with nature</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/gallery4.jpg" alt="Nature photography">
+                        <div class="slide-caption">
+                            <h3>Wildlife Photography</h3>
+                            <p>Capturing nature's beauty through the lens</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/gallery5.jpg" alt="Sunset view">
+                        <div class="slide-caption">
+                            <h3>Mountain Sunset</h3>
+                            <p>Breathtaking views from our mountain trails</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hiking">Hiking</button>
+                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+                <button class="filter-btn" data-filter="camping">Camping</button>
+                <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="hiking">
+                    <img src="images/gallery1.jpg" alt="Forest hiking">
+                    <div class="gallery-overlay">
+                        <h3>Forest Trail</h3>
+                        <p>Beautiful hiking path through ancient trees</p>
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="images/gallery2.jpg" alt="Bird watching">
+                    <div class="gallery-overlay">
+                        <h3>Bird Watching</h3>
+                        <p>Observing rare bird species</p>
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="camping">
+                    <img src="images/gallery3.jpg" alt="Eco camping">
+                    <div class="gallery-overlay">
+                        <h3>Eco Camping</h3>
+                        <p>Sustainable camping experience</p>
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="images/gallery4.jpg" alt="Wildlife photography">
+                    <div class="gallery-overlay">
+                        <h3>Wildlife Photo</h3>
+                        <p>Capturing nature's moments</p>
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="images/gallery5.jpg" alt="Mountain view">
+                    <div class="gallery-overlay">
+                        <h3>Mountain View</h3>
+                        <p>Stunning mountain landscape</p>
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="hiking">
+                    <img src="images/gallery6.jpg" alt="Trail view">
+                    <div class="gallery-overlay">
+                        <h3>Scenic Trail</h3>
+                        <p>Peaceful walking path</p>
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="images/gallery7.jpg" alt="Forest animals">
+                    <div class="gallery-overlay">
+                        <h3>Forest Animals</h3>
+                        <p>Wildlife in natural habitat</p>
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="landscapes">
+                    <img src="images/gallery8.jpg" alt="Lake view">
+                    <div class="gallery-overlay">
+                        <h3>Lake Reflection</h3>
+                        <p>Serene lake landscape</p>
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div class="photo-modal" id="photoModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img src="" alt="" id="modalImage">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>GreenScape Adventures</span>
+                    </div>
+                    <p>Connecting people with nature through sustainable adventures and conservation education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Nature Trail, Forest City, FC 12345</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@greenscapeadventures.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GreenScape Adventures. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

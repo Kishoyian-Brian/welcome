@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - GreenScape Adventures</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>GreenScape Adventures</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="activities.html" class="nav-link active"><i class="fas fa-hiking"></i> Activities</a>
+                <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About Us</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Activities</h1>
+            <p>Discover a wide range of eco-friendly adventures designed to connect you with nature</p>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities-section">
+        <div class="container">
+            <div class="activities-grid" id="activities-container">
+                <!-- Activities will be loaded dynamically from PHP -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading activities...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Categories -->
+    <section class="activity-categories">
+        <div class="container">
+            <h2>Activity Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Adventure & Hiking</h3>
+                    <p>Explore trails, mountains, and wilderness areas with experienced guides.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-binoculars"></i>
+                    </div>
+                    <h3>Wildlife Watching</h3>
+                    <p>Observe birds, animals, and marine life in their natural habitats.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photography</h3>
+                    <p>Capture nature's beauty with professional photography workshops.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Learn about conservation, sustainability, and environmental protection.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Eco Lodging</h3>
+                    <p>Stay in sustainable accommodations that respect the environment.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Farming Tours</h3>
+                    <p>Experience organic farming and learn about sustainable agriculture.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <h2>Ready to Book Your Adventure?</h2>
+            <p>Contact us to customize your eco-tourism experience</p>
+            <div class="booking-options">
+                <div class="booking-option">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Plan Your Trip</h3>
+                    <p>Customize your adventure based on your interests and schedule.</p>
+                </div>
+                <div class="booking-option">
+                    <i class="fas fa-users"></i>
+                    <h3>Group Bookings</h3>
+                    <p>Special rates and activities for groups of 6 or more people.</p>
+                </div>
+                <div class="booking-option">
+                    <i class="fas fa-gift"></i>
+                    <h3>Gift Certificates</h3>
+                    <p>Give the gift of nature with our eco-adventure gift certificates.</p>
+                </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>GreenScape Adventures</span>
+                    </div>
+                    <p>Connecting people with nature through sustainable adventures and conservation education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Nature Trail, Forest City, FC 12345</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@greenscapeadventures.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GreenScape Adventures. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/activities.js"></script>
+</body>
+</html>
