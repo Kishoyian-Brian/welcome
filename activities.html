@@ -21,7 +21,8 @@
                 <a href="activities.html" class="nav-link active"><i class="fas fa-hiking"></i> Activities</a>
                 <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
                 <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About Us</a>
-                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="booking.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="booking.html" class="nav-link"><i class="fas fa-calendar-check"></i> Book Now</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -42,11 +43,95 @@
     <!-- Activities Section -->
     <section class="activities-section">
         <div class="container">
-            <div class="activities-grid" id="activities-container">
-                <!-- Activities will be loaded dynamically from PHP -->
-                <div class="loading">
-                    <i class="fas fa-spinner fa-spin"></i>
-                    <p>Loading activities...</p>
+            <div class="activities-grid">
+                <!-- Forest Hiking Activity -->
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Forest hiking">
+                    <div class="activity-content">
+                        <h3>Forest Hiking</h3>
+                        <p>Explore pristine trails with experienced guides and discover native wildlife. Perfect for all skill levels.</p>
+                        <div class="activity-details">
+                            <p><strong>Duration:</strong> 2-4 hours</p>
+                            <p><strong>Difficulty:</strong> Easy to Moderate</p>
+                            <p><strong>Price:</strong> $45 / KSH 6,750 per person</p>
+                        </div>
+                        <a href="booking.html?activity=forest-hiking" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Bird Watching Activity -->
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Bird watching">
+                    <div class="activity-content">
+                        <h3>Bird Watching</h3>
+                        <p>Spot over 200 species of birds in their natural habitat with expert ornithologists.</p>
+                        <div class="activity-details">
+                            <p><strong>Duration:</strong> 3-5 hours</p>
+                            <p><strong>Difficulty:</strong> Easy</p>
+                            <p><strong>Price:</strong> $35 / KSH 5,250 per person</p>
+                        </div>
+                        <a href="booking.html?activity=bird-watching" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Eco Camping Activity -->
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Eco camping">
+                    <div class="activity-content">
+                        <h3>Eco Camping</h3>
+                        <p>Experience sustainable camping with minimal environmental impact. Learn leave-no-trace principles.</p>
+                        <div class="activity-details">
+                            <p><strong>Duration:</strong> 1-2 days</p>
+                            <p><strong>Difficulty:</strong> Moderate</p>
+                            <p><strong>Price:</strong> $85 / KSH 12,750 per person</p>
+                        </div>
+                        <a href="booking.html?activity=eco-camping" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Nature Photography Activity -->
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Nature photography">
+                    <div class="activity-content">
+                        <h3>Nature Photography</h3>
+                        <p>Capture the beauty of nature with professional photography workshops and guided sessions.</p>
+                        <div class="activity-details">
+                            <p><strong>Duration:</strong> 4-6 hours</p>
+                            <p><strong>Difficulty:</strong> Easy</p>
+                            <p><strong>Price:</strong> $55 / KSH 8,250 per person</p>
+                        </div>
+                        <a href="booking.html?activity=nature-photography" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Wildlife Safari Activity -->
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Wildlife safari">
+                    <div class="activity-content">
+                        <h3>Wildlife Safari</h3>
+                        <p>Observe local wildlife in their natural habitat with expert guides and conservation education.</p>
+                        <div class="activity-details">
+                            <p><strong>Duration:</strong> 3-4 hours</p>
+                            <p><strong>Difficulty:</strong> Easy</p>
+                            <p><strong>Price:</strong> $65 / KSH 9,750 per person</p>
+                        </div>
+                        <a href="booking.html?activity=wildlife-safari" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Eco Lodging Activity -->
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Eco lodging">
+                    <div class="activity-content">
+                        <h3>Eco Lodging</h3>
+                        <p>Stay in sustainable accommodations that respect the environment and support local communities.</p>
+                        <div class="activity-details">
+                            <p><strong>Duration:</strong> 1-7 days</p>
+                            <p><strong>Difficulty:</strong> Easy</p>
+                            <p><strong>Price:</strong> $120 / KSH 18,000 per night</p>
+                        </div>
+                        <a href="booking.html?activity=eco-lodging" class="btn btn-primary">Book Now</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +210,7 @@
                     <p>Give the gift of nature with our eco-adventure gift certificates.</p>
                 </div>
             </div>
-            <a href="contact.html" class="btn btn-primary">Contact Us Now</a>
+            <a href="booking.html" class="btn btn-primary">Contact Us Now</a>
         </div>
     </section>
 
@@ -153,15 +238,16 @@
                         <li><a href="activities.html">Activities</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="booking.html">Contact</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Nature Trail, Forest City, FC 12345</p>
-                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                        <p><i class="fas fa-envelope"></i> info@greenscapeadventures.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mount Kenya Wildlife Conservancy, Nanyuki, Laikipia County</p>
+                        <p><i class="fas fa-phone"></i> +254 700 866 007</p>
+                        <p><i class="fas fa-envelope"></i> info@mountkenya-adventures.com</p>
                     </div>
                 </div>
             </div>
@@ -172,6 +258,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/activities.js"></script>
 </body>
 </html>

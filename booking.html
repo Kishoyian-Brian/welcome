@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Adventure - GreenScape Adventures</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>GreenScape Adventures</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="activities.html" class="nav-link"><i class="fas fa-hiking"></i> Activities</a>
+                <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-users"></i> About Us</a>
+                <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="booking.html" class="nav-link active"><i class="fas fa-calendar-check"></i> Book Now</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Adventure</h1>
+            <p>Reserve your spot for an unforgettable eco-tourism experience</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-form-container">
+                    <form class="booking-form" id="bookingForm">
+                        <h2>Reservation Details</h2>
+                        
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Activity Selection -->
+                        <div class="form-section">
+                            <h3>Activity Selection</h3>
+                            <div class="form-group">
+                                <label for="activity">Choose Activity *</label>
+                                <select id="activity" name="activity" required>
+                                    <option value="">Select an activity</option>
+                                    <option value="forest-hiking">Forest Hiking - $45 / KSH 6,750</option>
+                                    <option value="bird-watching">Bird Watching - $35 / KSH 5,250</option>
+                                    <option value="eco-camping">Eco Camping - $85 / KSH 12,750</option>
+                                    <option value="nature-photography">Nature Photography - $55 / KSH 8,250</option>
+                                    <option value="wildlife-safari">Wildlife Safari - $65 / KSH 9,750</option>
+                                    <option value="eco-lodging">Eco Lodging - $120 / KSH 18,000/night</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Preferred Date *</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Preferred Time</label>
+                                    <select id="time" name="time">
+                                        <option value="morning">Morning (8:00 AM)</option>
+                                        <option value="afternoon">Afternoon (2:00 PM)</option>
+                                        <option value="evening">Evening (6:00 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Group Details -->
+                        <div class="form-section">
+                            <h3>Group Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="participants">Number of Participants *</label>
+                                    <select id="participants" name="participants" required>
+                                        <option value="">Select number</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3">3 People</option>
+                                        <option value="4">4 People</option>
+                                        <option value="5">5 People</option>
+                                        <option value="6">6 People</option>
+                                        <option value="7">7+ People (Group Rate)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="duration">Duration</label>
+                                    <select id="duration" name="duration">
+                                        <option value="half-day">Half Day (4 hours)</option>
+                                        <option value="full-day">Full Day (8 hours)</option>
+                                        <option value="overnight">Overnight</option>
+                                        <option value="multi-day">Multi-day</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Special Requirements -->
+                        <div class="form-section">
+                            <h3>Special Requirements</h3>
+                            <div class="form-group">
+                                <label for="requirements">Dietary Restrictions, Accessibility Needs, or Special Requests</label>
+                                <textarea id="requirements" name="requirements" rows="3" placeholder="Please let us know about any special requirements..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="experience">Experience Level</label>
+                                <select id="experience" name="experience">
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Payment Information -->
+                        <div class="form-section">
+                            <h3>Payment Information</h3>
+                            <div class="payment-summary">
+                                <div class="currency-note">
+                                    <p><i class="fas fa-info-circle"></i> Exchange Rate: 1 USD = 150 KSH (rates may vary)</p>
+                                </div>
+                                <div class="price-breakdown">
+                                    <div class="price-item">
+                                        <span>Activity Fee (USD):</span>
+                                        <span id="activityPriceUSD">$0</span>
+                                    </div>
+                                    <div class="price-item">
+                                        <span>Activity Fee (KSH):</span>
+                                        <span id="activityPriceKSH">KSH 0</span>
+                                    </div>
+                                    <div class="price-item">
+                                        <span>Participants:</span>
+                                        <span id="participantCount">0</span>
+                                    </div>
+                                    <div class="price-item total">
+                                        <span>Total Amount (USD):</span>
+                                        <span id="totalPriceUSD">$0</span>
+                                    </div>
+                                    <div class="price-item total">
+                                        <span>Total Amount (KSH):</span>
+                                        <span id="totalPriceKSH">KSH 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="paymentMethod">Payment Method</label>
+                                <select id="paymentMethod" name="paymentMethod">
+                                    <option value="card">Credit/Debit Card</option>
+                                    <option value="bank">Bank Transfer</option>
+                                    <option value="cash">Cash on Arrival</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="form-section">
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">I agree to the <a href="#" target="_blank">Terms and Conditions</a> and <a href="#" target="_blank">Cancellation Policy</a> *</label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to our newsletter for eco-tourism updates and special offers</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirm Booking
+                        </button>
+                        
+                        <div class="form-message" id="bookingMessage"></div>
+                    </form>
+                </div>
+
+                <!-- Booking Summary Sidebar -->
+                <div class="booking-summary">
+                    <h3>Booking Summary</h3>
+                    <div class="summary-content">
+                        <div class="summary-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Mount Kenya Wildlife Conservancy, Nanyuki</p>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Duration</h4>
+                                <p>Varies by activity (2-8 hours)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Group Size</h4>
+                                <p>1-15 people per group</p>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Safety</h4>
+                                <p>All equipment provided</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h4>Need Help?</h4>
+                        <p><i class="fas fa-phone"></i> +254 700 866 007</p>
+                        <p><i class="fas fa-envelope"></i> bookings@mountkenya-adventures.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>GreenScape Adventures</span>
+                    </div>
+                    <p>Connecting people with nature through sustainable adventures and conservation education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Mount Kenya Wildlife Conservancy, Nanyuki, Laikipia County</p>
+                        <p><i class="fas fa-phone"></i> +254 700 866 007</p>
+                        <p><i class="fas fa-envelope"></i> info@mountkenya-adventures.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GreenScape Adventures. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

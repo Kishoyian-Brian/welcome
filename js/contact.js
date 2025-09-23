@@ -302,7 +302,7 @@ function initMapInteraction() {
     
     mapPlaceholder.addEventListener('click', function() {
         // Open Google Maps in new tab
-        const address = encodeURIComponent('123 Nature Trail, Forest City, FC 12345');
+        const address = encodeURIComponent('Mount Kenya Wildlife Conservancy, Nanyuki, Laikipia County');
         const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${address}`;
         window.open(mapsUrl, '_blank');
     });

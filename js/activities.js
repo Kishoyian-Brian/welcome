@@ -1,43 +1,10 @@
 // GreenScape Adventures - Activities Page JavaScript
+// Simplified for instant loading
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Activities are now static in HTML, so we just initialize other functionality
-    initActivitiesPage();
+    // Activities are static - no loading needed
+    console.log('Activities page loaded instantly');
 });
-
-// Initialize activities page functionality
-function initActivitiesPage() {
-    // Add animation to activity cards
-    const cards = document.querySelectorAll('.activity-card');
-    cards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.1}s`;
-        card.classList.add('fade-in');
-    });
-    
-    // Initialize favorites functionality
-    initFavorites();
-    
-    // Add event listeners for filtering (if filter buttons exist)
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const category = this.dataset.filter;
-            filterActivities(category);
-            
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
-    
-    // Add search functionality (if search input exists)
-    const searchInput = document.querySelector('#activity-search');
-    if (searchInput) {
-        searchInput.addEventListener('input', function() {
-            searchActivities(this.value);
-        });
-    }
-}
 
 // Display activities in the grid (now using static content)
 function displayActivities(activities) {

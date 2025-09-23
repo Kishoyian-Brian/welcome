@@ -189,9 +189,9 @@ The website is fully responsive and works on:
 ## 📞 Contact Information
 
 **GreenScape Adventures**
-- **Address**: 123 Nature Trail, Forest City, FC 12345
-- **Phone**: +1 (555) 123-4567
-- **Email**: info@greenscapeadventures.com
+- **Address**: Mount Kenya Wildlife Conservancy, Nanyuki, Laikipia County
+- **Phone**: +254 700 866 007
+- **Email**: info@mountkenya-adventures.com
 - **Hours**: Monday-Friday 9:00 AM - 6:00 PM, Saturday 9:00 AM - 4:00 PM
 
 ## 🌟 Key Features
