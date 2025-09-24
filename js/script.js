@@ -283,13 +283,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('img');
     
     images.forEach(img => {
-        img.addEventListener('load', function() {
-            this.style.opacity = '1';
-        });
-        
-        // Set initial opacity
-        img.style.opacity = '0';
-        img.style.transition = 'opacity 0.3s ease';
+        // Only apply loading animation to images that haven't loaded yet
+        if (!img.complete) {
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.3s ease';
+            
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+            
+            img.addEventListener('error', function() {
+                // Show image even if it fails to load
+                this.style.opacity = '1';
+                console.warn('Image failed to load:', this.src);
+            });
+        } else {
+            // Image is already loaded, show it immediately
+            img.style.opacity = '1';
+        }
     });
 });
 
